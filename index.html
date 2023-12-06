@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minin Project</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main">
+    <button  onclick="turnOnLight()" >Turn on the light</button>
+    <img src="./images/blub off.png" alt="" id="bulbimage">
+    <button onclick="turnoffLight()">Turn Off the light</button>
+    </div>
+    <script>
+        function turnOnLight(){
+           const imgOfbulb=document.getElementById("bulbimage")
+           imgOfbulb.src="./images/blub on.png"
+        }
+        function turnoffLight(){
+           const imgOfbulb=document.getElementById("bulbimage")
+           imgOfbulb.src="./images/blub off.png"
+        }
+    </script>
+</body>
+
+</html>
